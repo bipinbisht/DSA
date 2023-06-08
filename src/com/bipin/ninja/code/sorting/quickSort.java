@@ -5,11 +5,13 @@ import java.util.Arrays;
 public class quickSort {
 
 	public static void main(String[] args) {
-		int[] a = { 10, 18, 19, 9, 2, 6, 11 };
-		int[] a1 = { 5, 7, 2, 8, 3, 33 };
-		int[] a3 = { 1, 2, 4, 5 };
-		qSort(a1, 0, a3.length - 1);
-		System.out.println(Arrays.toString(a3));
+//		int[] a = { 10, 18, 19, 9, 2, 6, 11 };
+//		int[] a1 = { 5, 7, 2, 8, 3, 33 };
+//		int[] a3 = { 1, 2, 4, 5 };
+		int[] a4 = { 5, 4, 3, 2, 1 };
+		int[] a5 = { 2, 2, 1, 5, 4 };
+		qSort(a5, 0, a5.length - 1);
+		System.out.println(Arrays.toString(a5));
 
 	}
 
@@ -19,7 +21,7 @@ public class quickSort {
 		int pivot = partition(a, start, end);
 		qSort(a, start, pivot - 1);
 		qSort(a, pivot + 1, end);
-		System.out.println(pivot);
+//		System.out.println(pivot);
 	}
 
 	private static int partition(int[] a, int start, int end) {
@@ -37,6 +39,7 @@ public class quickSort {
 			}
 			i++;
 		}
+		System.out.println(count);
 		int pivotpos = start + count;
 		int temp = a[pivot];
 		a[pivot] = a[pivotpos];
