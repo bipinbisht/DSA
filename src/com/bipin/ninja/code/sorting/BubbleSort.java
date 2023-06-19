@@ -1,14 +1,13 @@
-package com.bipin.ninja.code.b;
+package com.bipin.ninja.code.sorting;
 
 import java.util.Arrays;
 
-public class Output1 {
-	public static void main(String[] args) {
+public class BubbleSort {
 
-		int[] a = { 4, 3, 2, 1,10,14,12 };
+	public static void main(String[] args) {
+		int[] a = { 4, 3, 2, 1, 10, 14, 12 };
 		bSort(a);
 		System.out.println(Arrays.toString(a));
-
 	}
 
 	static void bSort(int[] a) {
@@ -22,5 +21,4 @@ public class Output1 {
 			}
 		}
 	}
-
 }
