@@ -9,8 +9,8 @@ public class LinkedListUse {
 	public static void main(String[] args) {
 		Node<Integer> head = getInput();
 		print(head);
-		Node<Integer> middle1 = FindMiddleOfLinkedList.getMiddle1(head);
-		print(middle1);
+		Node<Integer> reverse = ReverseLinkedlistRR.reverse(head);
+		print(reverse);
 	
 
 	}
