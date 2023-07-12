@@ -9,9 +9,10 @@ public class LinkedListUse {
 	public static void main(String[] args) {
 		Node<Integer> head = getInput();
 		print(head);
-		Node<Integer> reverse = ReverseLinkedlistRR.reverse(head);
+		Node<Integer> reverse = BubblesortLLIterative.bubbleSort(head);
 		print(reverse);
 	
+//36 42 18 8 20 
 
 	}
 	

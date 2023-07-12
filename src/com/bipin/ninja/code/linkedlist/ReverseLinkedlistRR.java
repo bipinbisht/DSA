@@ -10,6 +10,9 @@ public class ReverseLinkedlistRR {
 		}
 		
 		Node<Integer> finalHead = reverse(head.next);
+		//head.next refer to tail 
+		//head.next.next refer to tail next which we assign to current head for reversing
+		//and finally assigning head to null for breaking a link
 		head.next.next = head;
 		head.next = null;
 		return finalHead;

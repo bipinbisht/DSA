@@ -20,5 +20,4 @@ public class PalindromeEfficient {
 
 		return true;
 	}
-
 }
