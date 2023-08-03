@@ -10,11 +10,14 @@ public class TreeUse {
 //		Scanner s = new Scanner(System.in);
 //		TreeNode<Integer> root = takeInput(s);
 		TreeNode<Integer> root = takeInputLevelWise();
-		printLevelWise(root);
-
+		print(root);
+		System.out.println("==========================================================================");
 //		int countNodes = CountNoOfNodesInTree.countNodes(root);
-		System.out.println(SumOfNodes.sumOfAllNode(root));
-
+//		DepthOfNode.getDepthOfTree(root, 2);
+//		System.out.println(CountLeafNodes.countLeafNode(root));
+		Traversal.printPostOrder(root);
+		System.out.println();
+		Traversal.printPreOrder(root);
 	}
 
 	public static TreeNode<Integer> takeInput(Scanner s) {
