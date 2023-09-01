@@ -15,9 +15,7 @@ public class TreeUse {
 //		int countNodes = CountNoOfNodesInTree.countNodes(root);
 //		DepthOfNode.getDepthOfTree(root, 2);
 //		System.out.println(CountLeafNodes.countLeafNode(root));
-		Traversal.printPostOrder(root);
-		System.out.println();
-		Traversal.printPreOrder(root);
+		System.out.println(FindElementInTree.checkIfContainsX(root, 30));
 	}
 
 	public static TreeNode<Integer> takeInput(Scanner s) {
