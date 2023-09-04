@@ -4,14 +4,24 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+import com.bipin.ninja.code.binarytree.search.CheckBST;
+import com.bipin.ninja.code.binarytree.search.ConstructBstFromSortedArray;
+import com.bipin.ninja.code.binarytree.search.PrintElementsInRange;
+import com.bipin.ninja.code.binarytree.search.SearchNodeInBST;
+
 public class BinaryTreeUse {
 
 	public static void main(String[] args) {
+		int in[] = {1,2,3,4,5,6,7};
+//		int pre[] = { 1, 2, 4, 5, 3, 7 };
 //		Scanner s = new Scanner(System.in);
-		BinaryTreeNode<Integer> root = takeInputLevelWise();
-		printLevelWise(root);
+//		BinaryTreeNode<Integer> root = takeInputLevelWise();
+//		BinaryTreeNode<Integer> root = ConstructBinaryTreeFromInorderAndPreOrder.buildTree(pre, in);
+		BinaryTreeNode<Integer> sortedArrayToBST = ConstructBstFromSortedArray.SortedArrayToBST(in, in.length);
+		printLevelWise(sortedArrayToBST);
 		System.out.println("==================================================");
-		PrintNodesAtDepthK.printNodeAtDepthK(root, 4);
+
+//		System.out.println(CheckBST.isValidBstRange(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
 
 //		s.close();
 	}
