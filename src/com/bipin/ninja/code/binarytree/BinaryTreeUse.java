@@ -5,23 +5,35 @@ import java.util.Queue;
 import java.util.Scanner;
 
 import com.bipin.ninja.code.binarytree.search.CheckBST;
+import com.bipin.ninja.code.binarytree.search.ConstructBSTToSortedLL;
 import com.bipin.ninja.code.binarytree.search.ConstructBstFromSortedArray;
 import com.bipin.ninja.code.binarytree.search.PrintElementsInRange;
 import com.bipin.ninja.code.binarytree.search.SearchNodeInBST;
+import com.bipin.ninja.code.linkedlist.LinkedListUse;
+import com.bipin.ninja.code.linkedlist.Node;
 
 public class BinaryTreeUse {
 
 	public static void main(String[] args) {
-		int in[] = {1,2,3,4,5,6,7};
+//		int in[] = { 1, 2, 3,4,5,6,7 };
 //		int pre[] = { 1, 2, 4, 5, 3, 7 };
 //		Scanner s = new Scanner(System.in);
-//		BinaryTreeNode<Integer> root = takeInputLevelWise();
+		BinaryTreeNode<Integer> root = takeInputLevelWise();
 //		BinaryTreeNode<Integer> root = ConstructBinaryTreeFromInorderAndPreOrder.buildTree(pre, in);
-		BinaryTreeNode<Integer> sortedArrayToBST = ConstructBstFromSortedArray.SortedArrayToBST(in, in.length);
-		printLevelWise(sortedArrayToBST);
+//		BinaryTreeNode<Integer> sortedArrayToBST = ConstructBstFromSortedArray.SortedArrayToBST(in, in.length);
+		printLevelWise(root);
 		System.out.println("==================================================");
+//		Node<Integer> constructLinkedList = ConstructBSTToSortedLL.constructLinkedList(sortedArrayToBST);
+		
+//		LinkedListUse.print(constructLinkedList);
+//		
+//		Node<Integer> constructLinkedListNew = ConstructBSTToSortedLL.constructLinkedListNew(sortedArrayToBST);
+//		
+//		LinkedListUse.print(constructLinkedListNew);
+		
+		
 
-//		System.out.println(CheckBST.isValidBstRange(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+		System.out.println(CheckBST.isValidBstRange(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
 
 //		s.close();
 	}
